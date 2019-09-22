@@ -39,7 +39,6 @@ function goToSlide(index) {
         index = $buttons.length - 1
     }
     if (current === $buttons.length - 1 && index === 0) {
-        console.log(1)
         $slides.css({ transform: `translateX(${-($buttons.length + 1) * 200}px)` })
             .one('transitionend', function () {
                 $slides.hide()
@@ -48,7 +47,6 @@ function goToSlide(index) {
                     .show()
             })
     } else if (current === 0 && index === $buttons.length - 1) {
-        console.log(2)
         $slides.css({ transform: `translateX(0px)` })
             .one('transitionend', function () {
                 $slides.hide()
@@ -57,7 +55,6 @@ function goToSlide(index) {
                     .show()
             })
     } else {
-        console.log(3)
         $slides.css({ transform: `translateX(${-(index + 1) * 200}px)` })
     }
     current = index

@@ -1,20 +1,9 @@
-*{margin: 0;padding: 0}
-*{box-sizing: border-box}
-
-.window{
-  height: 430px;
-  width: 200px;
-  margin: 20px auto;
-  overflow: hidden;
-}
-#controls{
-  margin: 10px;
-}
-.images{
-  display: flex;
-  transition: all 1s;
-}
-.images > img{
-  width: 100%;
-}
-
+*{margin:0;padding:0}
+*{box-sizing:border-box}
+.window{height:430px;width:200px;margin:20px auto;overflow:hidden}
+#controls{display:inline-flex;justify-content:center;align-items:center}
+#next{margin-left:7px}
+#previous{margin-right:7px}
+#buttonWrapper>button{margin-left:5px;margin-right:5px;padding-top:2px}
+.images{display:flex;transition:all 1s}
+.images>img{width:100%}
